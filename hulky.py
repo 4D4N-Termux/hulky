@@ -115,7 +115,7 @@ class MonitorThread(threading.Thread):
 		previous=request_counter
 		while flag==0:
 			if (previous+100<request_counter) & (previous<>request_counter):
-				print "%d Запросов отправлено." % (request_counter)
+				print "%d Запроса(ов) отправлено." % (request_counter)
 				previous=request_counter
 		if flag==2:
 			print "\n-- HULKY Атака завершена! --"
